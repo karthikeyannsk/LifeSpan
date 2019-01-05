@@ -56,10 +56,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LifeSpan.Context.tt</DependentUpon>
     </Compile>
+    <Compile Include="Entity\LifeSpan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LifeSpan.tt</DependentUpon>
+    </Compile>
     <Compile Include="Entity\LifeSpan.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LifeSpan.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Entity\Tbl_User.cs">
+      <DependentUpon>LifeSpan.tt</DependentUpon>
     </Compile>
     <Compile Include="LifeSpanRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -81,6 +89,12 @@
     <Content Include="Entity\LifeSpan.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>LifeSpan.Context.cs</LastGenOutput>
+      <DependentUpon>LifeSpan.edmx</DependentUpon>
+    </Content>
+    <Content Include="Entity\LifeSpan.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LifeSpan.edmx</DependentUpon>
+      <LastGenOutput>LifeSpan.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

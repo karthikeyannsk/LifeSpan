@@ -50,6 +50,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LifeSpan.Repository\LifeSpan.Repository.csproj">
+      <Project>{361DC78E-AA33-4CF9-915B-F829B5B4FEFD}</Project>
+      <Name>LifeSpan.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LifeSpan.Service\LifeSpan.Service.csproj">
+      <Project>{4213751E-E317-4EEA-8140-4608F49A6623}</Project>
+      <Name>LifeSpan.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
